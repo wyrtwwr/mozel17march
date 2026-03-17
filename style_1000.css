@@ -375,7 +375,7 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
 
 /* картинки on1, on2, on3 */
 .on1 { width: 36px; }
-.on2, .on3 { width: 108px; }
+.on2, .on3 { width: 69px; }
 
 
 
@@ -2404,6 +2404,7 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
   }
 
   .page_mobile .card2_txt {
+    padding-left: 25px;
     width: 100%;
     margin-top: 18px;
     align-items: flex-start;
