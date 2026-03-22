@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-     background-image: url(img/block1_new.png);
+     background-image: url(img/headerbg-mob.png);
     background-size: cover;
     }
 
@@ -1662,10 +1662,19 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
 
 
 @media (max-width: 860px) { 
-
-  .btn_bl1 {
-    font-size: 14px;
-    width: 265px ;
+.block1 {
+    padding: 30px;
+    height: 390px;
+    background-image: url(img/bg_block1_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    animation: bgSlide 12s infinite;
+}
+.btn_bl1 {
+    font-size: 18px;
+    width: 333px;
     height: 30px;
     border: 2px solid white;
     border-radius: 36px;
@@ -1675,34 +1684,30 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
     align-items: center;
     align-self: flex-start;
     margin-bottom: 15px;
-  }
-
+}
 
 .text_block1 {
-    margin-top: 140px;
+    margin-top: 121px;
     width: max-content;
     padding-top: 0px;
     display: flex;
     flex-direction: column;
 }
-
-.text_block1 h1 { 
+.text_block1 h1 {
     text-transform: uppercase;
     color: white;
     font-weight: 600;
-    font-size: 18px; /* было 27px */
+    font-size: 20px;
 }
-
 .bl1_h1_1 {
     color: white;
     font-weight: bold;
-    font-size: 22px; /* было 43px */
+    font-size: 28px;
 }
-
 .bl1_h1_2 {
     color: white;
     font-weight: 400;
-    font-size: 16px; /* было 19px */
+    font-size: 18px;
 }
 
 
@@ -1718,8 +1723,8 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
 @media (max-width:746px) {
 .block1 {
     padding: 30px;
-    height: 370px;        /* высота блока остаётся фиксированной */
-    background-image: url(img/bg_block1_mobile.png);
+    height:550px;        /* высота блока остаётся фиксированной */
+    background-image: url(img/bgmobile.png);
     background-repeat: no-repeat;
     background-size: cover;      /* фон заполняет блок и слегка обрезается */
     background-position: center; /* центрируем обрезку */
@@ -1727,7 +1732,8 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
     animation: bgSlide 12s infinite;
 }
 .text_block1 {
-    margin-top: 100px;
+  margin: auto;
+    margin-top: 10px;
     width: max-content;
     padding-top: 0px;
     display: flex;
@@ -1735,63 +1741,41 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
 }
 
 
-}
-
-@media (max-width: 670px) {
-
-.block1 {
-    padding: 30px;
-    height: 290px;        /* высота блока остаётся фиксированной */
-    background-image: url(img/bg_block1_mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;      /* фон заполняет блок и слегка обрезается */
-    background-position: center; /* центрируем обрезку */
-    overflow: hidden;
-    animation: bgSlide 12s infinite;
-}
-
-
-
-
 .btn_bl1 {
-    font-size: 12px;
-    width: 220px;
-    height: 20px;
+    font-size: 18px;
+    width: 320px;
+    height: 30px;
     border: 2px solid white;
     border-radius: 36px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self:flex-start; /* ← прижимает вправо */
-    margin-bottom: 10px; 
+    align-self: flex-start;
+    margin-bottom: 5px;
 }
-.text_block1 {
-    margin-top: 100px;
-    width: max-content;
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-.text_block1 h1 { 
+.text_block1 h1 {
     text-transform: uppercase;
     color: white;
     font-weight: 600;
-    font-size: 13px; /* было 27px */
+    font-size: 19.7px;
 }
-
 .bl1_h1_1 {
     color: white;
     font-weight: bold;
-    font-size: 17px; /* было 43px */
+    font-size: 30px;
 }
-
 .bl1_h1_2 {
     color: white;
     font-weight: 400;
-    font-size: 11px; /* было 19px */
+    font-size: 14px;
 }
+}
+
+@media (max-width: 670px) {
+
+
+
 
 
 
@@ -1838,58 +1822,6 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
 }
 
 @media (max-width: 550px) {
-.block1 {
-    padding: 30px;
-    height: 220px;        /* высота блока остаётся фиксированной */
-    background-image: url(img/bg_block1_mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;      /* фон заполняет блок и слегка обрезается */
-    background-position: center; /* центрируем обрезку */
-    overflow: hidden;
-    animation: bgSlide 12s infinite;
-}
-
-
-.btn_bl1 {
-    font-size: 10px;
-    width: 180px;
-    height: 20px;
-    border: 2px solid white;
-    border-radius: 36px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self:flex-start; /* ← прижимает вправо */
-    margin-bottom: 10px; 
-}
-.text_block1 {
-    margin-top: 80px;
-    width: max-content;
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-.text_block1 h1 { 
-    text-transform: uppercase;
-    color: white;
-    font-weight: 600;
-    font-size: 10px; /* было 27px */
-}
-
-.bl1_h1_1 {
-    color: white;
-    font-weight: bold;
-    font-size: 14px; /* было 43px */
-}
-
-.bl1_h1_2 {
-    color: white;
-    font-weight: 400;
-    font-size: 8px; /* было 19px */
-}
-
 
 
 .btn-wrapper {
@@ -1902,60 +1834,6 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
 }
 
 @media (max-width: 410px) {
-
-.block1 {
-    padding: 30px;
-    height: 170px;        /* высота блока остаётся фиксированной */
-    background-image: url(img/bg_block1_mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;      /* фон заполняет блок и слегка обрезается */
-    background-position: center; /* центрируем обрезку */
-    overflow: hidden;
-    animation: bgSlide 12s infinite;
-}
-
-
-
-
-.btn_bl1 {
-    font-size: 8.5px;
-    width: 150px;
-    height: 20px;
-    border: 2px solid white;
-    border-radius: 36px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self:flex-start; /* ← прижимает вправо */
-    margin-bottom: 10px; 
-}
-.text_block1 {
-    margin-top: 50px;
-    width: max-content;
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-.text_block1 h1 { 
-    text-transform: uppercase;
-    color: white;
-    font-weight: 600;
-    font-size: 9px; /* было 27px */
-}
-
-.bl1_h1_1 {
-    color: white;
-    font-weight: bold;
-    font-size: 12.5px; /* было 43px */
-}
-
-.bl1_h1_2 {
-    color: white;
-    font-weight: 400;
-    font-size: 8px; /* было 19px */
-}
 
 
 
@@ -2017,7 +1895,57 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
 
 }
 
+@media (max-width:400px) {
+.block1 {
+    padding: 13px;
+    height: 436px;
+    background-image: url(img/bgmobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    animation: bgSlide 12s infinite;
+}
+.text_block1 {
+  margin: auto;
+    margin-top: 10px;
+    width: max-content;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
 
+
+.btn_bl1 {
+    font-size: 17px;
+    width: 310px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 36px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+.text_block1 h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.bl1_h1_1 {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+.bl1_h1_2 {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+}
 
 @media (max-width: 340px) {
     .btn-circle {
@@ -2060,6 +1988,60 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
     font-size: 10px !important;
   }
 
+
+
+
+  
+   .block1 {
+    padding: 0px;
+    height:400px;        /* высота блока остаётся фиксированной */
+    background-image: url(img/bgmobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;      /* фон заполняет блок и слегка обрезается */
+    background-position: center; /* центрируем обрезку */
+    overflow: hidden;
+    animation: bgSlide 12s infinite;
+}
+.text_block1 {
+  margin:20px auto;
+
+    width: max-content;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn_bl1 {
+    font-size: 15px;
+    width: 268px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 36px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+.text_block1 h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.bl1_h1_1 {
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+}
+.bl1_h1_2 {
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+}
+
 }
 
 
@@ -2088,15 +2070,55 @@ background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f
 .btn-icon2_mob {
   padding: 10px;
 }
-    .block1 {
-    padding: 30px;
-    height: 170px;        /* высота блока остаётся фиксированной */
-    background-image: url(img/bg_block1_mobile.png);
+
+   .block1 {
+    padding: 0px;
+    height:400px;        /* высота блока остаётся фиксированной */
+    background-image: url(img/bgmobile.png);
     background-repeat: no-repeat;
     background-size: cover;      /* фон заполняет блок и слегка обрезается */
     background-position: center; /* центрируем обрезку */
     overflow: hidden;
     animation: bgSlide 12s infinite;
+}
+.text_block1 {
+  margin:20px auto;
+
+    width: max-content;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn_bl1 {
+    font-size: 16px;
+    width: 285px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 36px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+.text_block1 h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+.bl1_h1_1 {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+.bl1_h1_2 {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .btn-circle5 {
